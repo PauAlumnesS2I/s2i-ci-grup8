@@ -1,0 +1,21 @@
+; Archivo de zona inversa para cafepaco.com
+
+$TTL 1h ; Tiempo de vida predeterminado para los registros en la zona (1 hora)
+@   IN  SOA ns01.cafepaco.com. admin.hospitalbinissalem.com. (
+            2023120401 ; Número de serie (debe incrementarse con cada cambio)
+            1d         ; Tiempo de vida del SOA (1 día)
+            2h         ; Intervalo de reintentos del SOA (2 horas)
+            4w         ; Tiempo de vida máximo del SOA (4 semanas)
+            1h )       ; Tiempo de vida predeterminado para los registros (1 hora)
+
+; Servidores de nombres
+@   IN  NS  ns01.cafepaco.com.
+@   IN  NS  ns02.cafepaco.com.
+
+; Mapeo inverso de direcciones IP a nombres de host
+198 IN  PTR ns01.cafepaco.com.
+199 IN  PTR ns02.cafepaco.com.
+206 IN  PTR mail01.cafepaco.com.
+207 IN  PTR mail02.cafepaco.com.
+208 IN  PTR web.cafepaco.com.
+209 IN  PTR file.cafepaco.com.
