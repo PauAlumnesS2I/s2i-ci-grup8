@@ -1,0 +1,20 @@
+; Archivo de zona inversa para estacions.barpaco.com
+
+$TTL 1m ; Tiempo de vida predeterminado para los registros en la zona (1 minuto)
+@   IN  SOA ns01.barpaco.com. admin.barpaco.com. (
+            2008052001 ; Número de serie (debe incrementarse con cada cambio)
+            120        ; Tiempo de vida del SOA (2 minutos)
+            60         ; Intervalo de reintentos del SOA (1 minuto)
+            86400      ; Tiempo de vida máximo del SOA (1 día)
+            60 )       ; Tiempo de vida predeterminado para los registros (1 minuto)
+
+; Servidores de nombres
+@   IN  NS  ns01.barpaco.com.
+@   IN  NS  ns02.barpaco.com.
+
+; Mapeo inverso de direcciones IP a nombres de host
+1   IN  PTR est01.estacions.barpaco.com.
+2   IN  PTR est02.estacions.barpaco.com.
+3   IN  PTR est03.estacions.barpaco.com.
+4   IN  PTR est04.estacions.barpaco.com.
+5   IN  PTR est05.estacions.barpaco.com.
