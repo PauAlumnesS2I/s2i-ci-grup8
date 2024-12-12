@@ -37,13 +37,13 @@ Ara el servei DNS systemd-resolved ja no escoltarà al port 53. Si necessites m�
 
 ## Ejecución server 1 (barpaco.com)
 
-1. En primer lugar preparamos un contenedor e instalamos docker y git para clonar el repositorio:
+1. En primer lugar preparamos un contenedor e instalamos docker y git para clonar el repositorio:   
 
-Red: Este servicio se encuentra en la subred de DMZ (dirección de red 192.168.145.192/26)
-Nombre maquina: DCK-DNS-G8
-Dirección IP: 192.168.145.196/26
-Gateway: 192.168.145.193
-VLAN tag: 3280
+Red: Este servicio se encuentra en la subred de DMZ (dirección de red 192.168.145.192/26)   
+Nombre maquina: DCK-DNS-G8   
+Dirección IP: 192.168.145.196/26   
+Gateway: 192.168.145.193   
+VLAN tag: 3280   
 
 ```
 apt install docker-compose
