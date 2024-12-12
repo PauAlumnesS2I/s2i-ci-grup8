@@ -5,7 +5,7 @@ services:
     build:
       context: ..
       dockerfile: dns.Dockerfile
-    container_name: dns-dck-hospitalbinissalem
+    container_name: dns-dck-grup8-server1
     ports:
 # Perque el servei funcioni s'han de desactiar el systemd-resolved per aixo s'han d'executar les seguents instruccions.
 # systemctl stop systemd-resolved
