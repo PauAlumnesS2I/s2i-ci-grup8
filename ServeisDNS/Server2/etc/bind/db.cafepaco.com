@@ -1,7 +1,7 @@
 ; BIND data file for cafepaco.com
 
 $TTL 60
-@   IN  SOA ns01.cafepaco.com. admin.hospitalbinissalem.com. (
+@   IN  SOA ns01.cafepaco.com. admin.cafepaco.com. (
             2008052001 ; Serial
             120        ; Refresh
             60         ; Retry

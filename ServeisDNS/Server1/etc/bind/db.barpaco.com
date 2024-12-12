@@ -1,7 +1,7 @@
 ; BIND data file for barpaco.com
 
 $TTL 60
-@   IN  SOA ns01.barpaco.com. admin.hospitalbinissalem.com. (
+@   IN  SOA ns01.barpaco.com. admin.barpaco.com. (
             2008052001 ; Serial
             120        ; Refresh
             60         ; Retry
