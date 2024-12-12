@@ -14,8 +14,8 @@ La documentación de las zonas se encuentra en: https://docs.google.com/document
 Els serveis DNS estaran implantats sobre un docker cada un dells implantats al proxmox.
 
 El servei DNS està gestionat per dos servidors:
-* [Server1](Server1/README.md)
-* [Server2](Server2/README.md)
+* [Server1](Server1/README.md) (barpaco.com)
+* [Server2](Server2/README.md) (cafepaco.com)
 
 ## Preparació de l'anfitrio 
 Alguns sistemes linux el sistema de resolved està lligat a un servei que es troba lligat al port 53.
@@ -37,6 +37,12 @@ Ara el servei DNS systemd-resolved ja no escoltarà al port 53. Si necessites m�
 ## Ejecución server 1 (barpaco.com)
 
 1. En primer lugar preparamos un contenedor e instalamos docker y git para clonar el repositorio:
+
+Red: Este servicio se encuentra en la subred de DMZ (dirección de red 192.168.145.192/26)
+Nombre maquina: DCK-DNS-G8
+Dirección IP: 192.168.145.196/26
+Gateway: 192.168.145.193
+VLAN tag: 3280
 
 ```
 apt install docker-compose
@@ -64,6 +70,12 @@ docker compose up
 ## Ejecución server 2 (cafepaco.com)
 
 1. En primer lugar preparamos un contenedor e instalamos docker y git para clonar el repositorio:
+
+Red: Este servicio se encuentra en la subred de DMZ (dirección de red 192.168.145.192/26)
+Nombre maquina: DCK-DNS-G8-2
+Dirección IP: 192.168.145.198/26
+Gateway: 192.168.145.193
+VLAN tag: 3280
 
 ```
 apt install docker-compose
