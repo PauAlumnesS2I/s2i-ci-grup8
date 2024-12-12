@@ -1,3 +1,4 @@
+
 # Servei DNS
 
 ## Introducció
@@ -69,13 +70,13 @@ docker compose up
 
 ## Ejecución server 2 (cafepaco.com)
 
-1. En primer lugar preparamos un contenedor e instalamos docker y git para clonar el repositorio:
+1. En primer lugar preparamos un contenedor e instalamos docker y git para clonar el repositorio:  
 
-Red: Este servicio se encuentra en la subred de DMZ (dirección de red 192.168.145.192/26)
-Nombre maquina: DCK-DNS-G8-2
-Dirección IP: 192.168.145.198/26
-Gateway: 192.168.145.193
-VLAN tag: 3280
+Red: Este servicio se encuentra en la subred de DMZ (dirección de red 192.168.145.192/26)  
+Nombre maquina: DCK-DNS-G8-2  
+Dirección IP: 192.168.145.198/26  
+Gateway: 192.168.145.193  
+VLAN tag: 3280  
 
 ```
 apt install docker-compose
